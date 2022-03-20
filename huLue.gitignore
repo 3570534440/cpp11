@@ -1,0 +1,7 @@
+*.o
+*.~
+#忽略bulid/目录下的所有文件
+bulid/
+#git commit 是提交更新
+#git commit -a 是跳过暂存区直接提交
+#git log 查看提交历史c
