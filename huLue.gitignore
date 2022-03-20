@@ -7,6 +7,6 @@ bulid/
 # git log 查看提交历史
 # git status查看
 # git add /c/Users/86186/Desktop/c-2022317  git add 添加到暂存区，后面是路径
-# git commit -m 'c-2022317'
+# git commit -m 'c-2022317'   后面是要提交的文件夹
 # git pull origin master
 # git push origin master
