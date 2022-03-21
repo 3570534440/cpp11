@@ -30,5 +30,11 @@
     <ClCompile Include="5.decltype.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="返回值后置.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="final.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

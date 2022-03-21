@@ -144,6 +144,8 @@
     <ClCompile Include="3.constexpr.cpp" />
     <ClCompile Include="2.原始自变量.cpp" />
     <ClCompile Include="5.decltype.cpp" />
+    <ClCompile Include="final.cpp" />
+    <ClCompile Include="返回值后置.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
