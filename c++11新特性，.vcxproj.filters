@@ -30,28 +30,28 @@
     <ClCompile Include="5.decltype.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="返回值后置.cpp">
+    <ClCompile Include="8.返回值后置.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="final.cpp">
+    <ClCompile Include="6.final.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="模板的优化.cpp">
+    <ClCompile Include="11.模板的优化.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="using.cpp">
+    <ClCompile Include="7.using.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="委托和继承构造函数cpp.cpp">
+    <ClCompile Include="12.委托和继承构造函数cpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="列表初始化.cpp">
+    <ClCompile Include="10.列表初始化.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="基于范围的for.cpp">
+    <ClCompile Include="9.基于范围的for.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="可调用对象包装器，绑定器.cpp">
+    <ClCompile Include="13.可调用对象包装器，绑定器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
