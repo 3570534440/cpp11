@@ -1,10 +1,9 @@
 //c++笔记
 
-//笔记转载
-//作者: 苏丙榅
+//参考链接
 //链接 : https://subingwen.cn/cpp/bind/#3-%E7%BB%91%E5%AE%9A%E5%99%A8
-//来源: 爱编程的大丙
-//
+
+
 
 #include<iostream>
 #include <string>
