@@ -4,23 +4,50 @@ using namespace std;
 
 int main()
 {
+// ä½¿ç”¨typedefå®šä¹‰å‡½æ•°æŒ‡é’ˆ
+typedef int(*func_ptr)(int, double);
+
+// ä½¿ç”¨usingå®šä¹‰å‡½æ•°æŒ‡é’ˆ
+using func_ptr1 = int(*)(int, double);
+
 	return 0;
 }
 
 /*
-using¶¨Òå±ğÃû
-using ĞÂµÄÀàĞÍ = ¾ÉµÄÀàĞÍ
+usingå®šä¹‰åˆ«å
+using æ–°çš„ç±»å‹ = æ—§çš„ç±»å‹
 
 using t2= int ;
 t2 a =10;
 
-typedef Óëusing
+typedef ä¸using
 typedef int (* func)(int ,string);
 using func = int (*)(int ,string);
-ºÜÃ÷ÏÔusing¶¨ÒåµÄ¿É¶ÁĞÔºÃ
-func f = mytest;Ö¸ÕëfÖ¸ÏòÒ»¸ö·µ»ØÖµÎªing²ÎÊıÎªintºÍstringµÄº¯Êı
+å¾ˆæ˜æ˜¾usingå®šä¹‰çš„å¯è¯»æ€§å¥½
+func f = mytest;æŒ‡é’ˆfæŒ‡å‘ä¸€ä¸ªè¿”å›å€¼ä¸ºingå‚æ•°ä¸ºintå’Œstringçš„å‡½æ•°
 
-usingÓï·¨ºÍtypedefÒ»Ñù£¬²¢²»»á´´½¨ĞÂµÄÀàĞÍ£¬ËûÃÇÖ»ÊÇ
-¸øÄ³Ğ©ÀàĞÍ¶¨ÒåÁËĞÂµÄ±ğÃû£¬using¿´ÆğÀ´¸ü¼ÓÖ±¹Û
+usingè¯­æ³•å’Œtypedefä¸€æ ·ï¼Œå¹¶ä¸ä¼šåˆ›å»ºæ–°çš„ç±»å‹ï¼Œä»–ä»¬åªæ˜¯
+ç»™æŸäº›ç±»å‹å®šä¹‰äº†æ–°çš„åˆ«åï¼Œusingçœ‹èµ·æ¥æ›´åŠ ç›´è§‚
 
+
+ using æ¥ä¸ºä¸€ä¸ªæ¨¡æ¿å®šä¹‰åˆ«åï¼Œå¯¹äºä¸Šé¢çš„éœ€æ±‚å¯ä»¥å†™æˆè¿™æ ·ï¼š
 */
+
+template <typename T>
+using mymap = map<int, T>;
+
+int main(void)
+{
+    // mapçš„valueæŒ‡å®šä¸ºstringç±»å‹
+    mymap<string> m;
+    m.insert(make_pair(1, "luffy"));
+    m.insert(make_pair(2, "ace"));
+
+    // mapçš„valueæŒ‡å®šä¸ºintç±»å‹
+    mymap<int> m1;
+    m1.insert(1, 100);
+    m1.insert(2, 200);
+
+    return 0;
+}
+

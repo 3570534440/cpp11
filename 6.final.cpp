@@ -1,17 +1,102 @@
 #include<iostream>
 #include <string>
 using namespace std;
-//ÓÃÀ´ÏŞÖÆÄ³¸öÀà²»ÄÜ±»¼Ì³Ğ£¬»òÕßÄ³¸öĞéº¯Êı²»ÄÜ±»ÖØĞ´
-//ĞŞÊÎº¯Êı»òÀà
-//Ö»ÄÜĞŞÊÎĞéº¯Êı£¬ÕâÑù¾ÍÄÜ×èÖ¹×ÓÀàÖØĞ´¸¸ÀàÕâ¸öº¯ÊıÁË
-/*
-ÔÚºóÃæĞ´final£¬Ö»ÄÜĞŞÊÎĞéº¯Êı£¬ÔÚ×ÓÀà¼Ì³Ğ¸¸ÀàµÄĞéº¯Êı
-Ö®ºóĞ´£¬ÔÚĞéº¯ÊıºóÃæ²»Ğ´
 
-ĞŞÊÎÀàÊ±£¬ÔÚºóÃæÖ±½ÓĞ´final¾ÍĞĞ£¬·ÀÖ¹Àà±»¼Ì³Ğ
+class Base
+{
+public:
+    virtual void test()//åœ¨è™šå‡½æ•°çš„åé¢ä¸èƒ½å†™
+    {
+        cout << "Base class...";
+    }
+};
+
+class Child : public Base
+{
+public:
+    void test() final//åœ¨ç»§æ‰¿è™šå‡½æ•°çš„åé¢å†™
+    {
+        cout << "Child class...";
+    }
+};
+
+class GrandChild : public Child
+{
+public:
+    // è¯­æ³•é”™è¯¯, ä¸å…è®¸é‡å†™
+    void test()
+    {
+        cout << "GrandChild class...";
+    }
+};
+
+//ä¿®é¥°ç±»æ—¶
+class Base
+{
+public:
+    virtual void test()
+    {
+        cout << "Base class...";
+    }
+};
+
+class Child final: public Base
+{
+public:
+    void test()
+    {
+        cout << "Child class...";
+    }
+};
+
+// error, è¯­æ³•é”™è¯¯
+class GrandChild : public Child
+{
+public:
+};
+
+
+//ç”¨æ¥é™åˆ¶æŸä¸ªç±»ä¸èƒ½è¢«ç»§æ‰¿ï¼Œæˆ–è€…æŸä¸ªè™šå‡½æ•°ä¸èƒ½è¢«é‡å†™
+//ä¿®é¥°å‡½æ•°æˆ–ç±»
+//åªèƒ½ä¿®é¥°è™šå‡½æ•°ï¼Œè¿™æ ·å°±èƒ½é˜»æ­¢å­ç±»é‡å†™çˆ¶ç±»è¿™ä¸ªå‡½æ•°äº†
+/*
+åœ¨åé¢å†™finalï¼Œåªèƒ½ä¿®é¥°è™šå‡½æ•°ï¼Œåœ¨å­ç±»ç»§æ‰¿çˆ¶ç±»çš„è™šå‡½æ•°
+ä¹‹åå†™ï¼Œåœ¨è™šå‡½æ•°åé¢ä¸å†™
+
+ä¿®é¥°ç±»æ—¶ï¼Œåœ¨åé¢ç›´æ¥å†™finalå°±è¡Œï¼Œé˜²æ­¢ç±»è¢«ç»§æ‰¿
+*/
+class Child final: public Base
+
+
+
+/*
+overeideé‡å†™çˆ¶ç±»çš„å‡½æ•°ï¼Œå†™åœ¨å‡½æ•°çš„åé¢ç”¨æ¥è¯´æ˜è¿™ä¸ªå‡½æ•°æ˜¯
+é‡å†™äº†çˆ¶ç±»çš„å‡½æ•°ï¼Œä»¥ä¾¿æ£€æŸ¥é”™è¯¯æ˜¯å¦å†™é”™äº†å¯’æš‘è¡¨ï¼Œé™ä½é”™è¯¯çš„æ¦‚ç‡
 */
 
-/*
-overeideÖØĞ´¸¸ÀàµÄº¯Êı£¬Ğ´ÔÚº¯ÊıµÄºóÃæÓÃÀ´ËµÃ÷Õâ¸öº¯ÊıÊÇ
-ÖØĞ´ÁË¸¸ÀàµÄº¯Êı£¬ÒÔ±ã¼ì²é´íÎóÊÇ·ñĞ´´íÁËº®Êî±í£¬½µµÍ´íÎóµÄ¸ÅÂÊ
-*/
+class Base
+{
+public:
+    virtual void test()
+    {
+        cout << "Base class...";
+    }
+};
+
+class Child : public Base
+{
+public:
+    void test() override
+    {
+        cout << "Child class...";
+    }
+};
+
+class GrandChild : public Child
+{
+public:
+    void test() override
+    {
+        cout << "Child class...";
+    }
+};
