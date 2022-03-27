@@ -51,7 +51,16 @@
     <ClCompile Include="9.基于范围的for.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="13.可调用对象包装器，绑定器.cpp">
+    <ClCompile Include="13.可调用对象包装器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14.可调用对象的绑定器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lambda .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="右值引用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

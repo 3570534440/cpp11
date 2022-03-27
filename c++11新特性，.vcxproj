@@ -145,13 +145,16 @@
     <ClCompile Include="2.原始自变量.cpp" />
     <ClCompile Include="5.decltype.cpp" />
     <ClCompile Include="6.final.cpp" />
-    <ClCompile Include="13.可调用对象包装器，绑定器.cpp" />
+    <ClCompile Include="13.可调用对象包装器.cpp" />
     <ClCompile Include="9.基于范围的for.cpp" />
     <ClCompile Include="7.using.cpp" />
     <ClCompile Include="10.列表初始化.cpp" />
     <ClCompile Include="12.委托和继承构造函数cpp.cpp" />
     <ClCompile Include="11.模板的优化.cpp" />
     <ClCompile Include="8.返回值后置.cpp" />
+    <ClCompile Include="14.可调用对象的绑定器.cpp" />
+    <ClCompile Include="lambda .cpp" />
+    <ClCompile Include="右值引用.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
