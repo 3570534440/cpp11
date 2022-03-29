@@ -54,3 +54,55 @@ int main()
 
 //const Test& t = getObj() 这句代码的语法是正确的，常量左值引用是一个万能引用类型，它可以接受左值、右值、常量左值和常量右值。
 
+//优化
+#include <iostream>
+using namespace std;
+
+class Test
+{
+public:
+    Test() : m_num(new int(100))
+    {
+        cout << "construct: my name is jerry" << endl;
+    }
+
+    Test(const Test& a) : m_num(new int(*a.m_num))
+    {
+        cout << "copy construct: my name is tom" << endl;
+    }
+
+    // 添加移动构造函数
+    Test(Test&& a) : m_num(a.m_num)
+    //内存资源的转移/右值引用了a.num所指的值，
+    //m_num指向了a.m_num指向的内存空间，这样这块内存被释放时，可以延长内存存活时间
+    //构造一个匿名对象和引用一个匿名对象需要花费大量时间，如果这个类的匿名对象很大的话
+    //拷贝构造时会浪费时间和内存，拷贝完之后会释放资源，这时右值引用会延长这段内存的
+    //存活时间
+    {
+        a.m_num = nullptr;//释放内存时，释放了一个空内存
+        cout << "move construct: my name is sunny" << endl;
+    }
+
+    ~Test()
+    {
+        delete m_num;
+        cout << "destruct Test class ..." << endl;
+    }
+
+    int* m_num;
+};
+
+Test getObj()
+{
+    Test t;
+    return t;
+}
+
+int main()
+{
+    Test t = getObj();
+    cout << "t.m_num: " << *t.m_num << endl;
+    return 0;
+};
+
+
