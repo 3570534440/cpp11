@@ -106,3 +106,57 @@ int main()
 };
 
 
+int&& a1 = 5;
+auto&& bb = a1;
+auto&& bb1 = 5;
+
+int a2 = 5;
+int &a3 = a2;
+auto&& cc = a3;
+auto&& cc1 = a2;
+
+const int& s1 = 100;
+const int&& s2 = 100;
+auto&& dd = s1;
+auto&& ee = s2;
+
+const auto&& x = 5;
+//第 2 行：a1 为右值引用，推导出的 bb 为左值引用类型
+//第 3 行：5 为右值，推导出的 bb1 为右值引用类型
+//第 7 行：a3 为左值引用，推导出的 cc 为左值引用类型
+//第 8 行：a2 为左值，推导出的 cc1 为左值引用类型
+//第 12 行：s1 为常量左值引用，推导出的 dd 为常量左值引用类型
+//第 13 行：s2 为常量右值引用，推导出的 ee 为常量左值引用类型
+//第 15 行：x 为右值引用，不需要推导，只能通过右值初始化
+
+
+
+void printValue(int &i)
+{
+    cout << "l-value: " << i << endl;
+}
+
+void printValue(int &&i)
+{
+    cout << "r-value: " << i << endl;
+}
+
+void forward(int &&k)
+{
+    printValue(k);
+}
+
+int main()
+{
+    int i = 520;
+    printValue(i);
+    printValue(1314);
+    forward(250);
+
+    return 0;
+};
+//结果如下
+//l-value: 520
+//l-value: 1314
+//l-value: 250
+
