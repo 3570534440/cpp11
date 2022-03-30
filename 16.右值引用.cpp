@@ -141,7 +141,7 @@ void printValue(int &&i)
     cout << "r-value: " << i << endl;
 }
 
-void forward(int &&k)//调用时，右值引用变为左值引用
+void forward(int &&k)//不传值时是右值引用，传值之后是左值引用，调用时，右值引用变为左值引用
 {
     printValue(k);
 }
