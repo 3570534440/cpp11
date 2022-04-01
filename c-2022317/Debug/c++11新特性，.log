@@ -1,0 +1,132 @@
+﻿  1.nullptr.cpp
+  4.auto.cpp
+D:\xia\gitee仓库\c-2022317\4.auto.cpp(10,8): error C3531: “a”: 类型包含“auto”的符号必须具有初始值设定项
+D:\xia\gitee仓库\c-2022317\4.auto.cpp(11,7): error C3530: “auto”不能与任何其他类型说明符组合
+D:\xia\gitee仓库\c-2022317\4.auto.cpp(14,8): error C2040: “a”:“auto *”与“int”的间接寻址级别不同
+D:\xia\gitee仓库\c-2022317\4.auto.cpp(15,7): error C2371: “b”: 重定义；不同的基类型
+D:\xia\gitee仓库\c-2022317\4.auto.cpp(11): message : 参见“b”的声明
+  3.constexpr.cpp
+D:\xia\gitee仓库\c-2022317\3.constexpr.cpp(13,3): error C3892: “t”: 不能给常量赋值
+  2.原始自变量.cpp
+D:\xia\gitee仓库\c-2022317\2.原始自变量.cpp(7,15): warning C4129: “h”: 不可识别的字符转义序列
+D:\xia\gitee仓库\c-2022317\2.原始自变量.cpp(7,15): warning C4129: “w”: 不可识别的字符转义序列
+D:\xia\gitee仓库\c-2022317\2.原始自变量.cpp(27,9): error C2374: “str3”: 重定义；多次初始化
+D:\xia\gitee仓库\c-2022317\2.原始自变量.cpp(19): message : 参见“str3”的声明
+  5.decltype.cpp
+D:\xia\gitee仓库\c-2022317\5.decltype.cpp(9,19): error C2371: “b”: 重定义；不同的基类型
+D:\xia\gitee仓库\c-2022317\5.decltype.cpp(8): message : 参见“b”的声明
+  6.final.cpp
+  13.可调用对象包装器.cpp
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(51,1): error C2011: “Test”:“struct”类型重定义
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(28): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(64,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(37): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(66,10): error C2079: “t”使用未定义的 struct“Test”
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(68,5): error C2064: 项不会计算为接受 2 个参数的函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(92,52): error C2027: 使用了未定义类型“Test”
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(80): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(92,10): error C2440: “初始化”: 无法从“int (__cdecl *)(int,double)”转换为“void (__thiscall Test::* )(int,std::string)”
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(92,43): message : 没有使该转换得以执行的上下文
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(94,34): error C2027: 使用了未定义类型“Test”
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(80): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(94,39): error C2065: “m_num”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(96,10): error C2079: “t”使用未定义的 struct“Test”
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(98,17): error C2296: “.*”: 非法，左操作数包含“int”类型
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(100,16): error C2296: “.*”: 非法，左操作数包含“int”类型
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(289,5): error C2672: “std::bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(289,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(289,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(289,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(290,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(290,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(290,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(290,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(291,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(291,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(291,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(291,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(296,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(296,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(296,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(296,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(298,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(298,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(298,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(298,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(299,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(299,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(299,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\13.可调用对象包装器.cpp(299,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+  9.基于范围的for.cpp
+  7.using.cpp
+  10.列表初始化.cpp
+  12.委托和继承构造函数cpp.cpp
+D:\xia\gitee仓库\c-2022317\12.委托和继承构造函数cpp.cpp(89,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\12.委托和继承构造函数cpp.cpp(45): message : 参见“main”的前一个定义
+  11.模板的优化.cpp
+  8.返回值后置.cpp
+D:\xia\gitee仓库\c-2022317\8.返回值后置.cpp(7,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+  14.可调用对象的绑定器.cpp
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(73,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(36): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(76,5): error C2672: “std::bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(76,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(76,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(76,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(77,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(77,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(77,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(77,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(78,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(78,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(78,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(78,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(83,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(83,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(83,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(83,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(85,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(85,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(85,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(85,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(86,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(86,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(86,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\14.可调用对象的绑定器.cpp(86,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+  正在生成代码...
