@@ -152,4 +152,69 @@ int main()
 
     return 0;
 }
+//指定删除器
+//当智能指针管理的内存对应的引用计数变为 0 的时候，这块内存就会被智能
+//指针析构掉了。另外，我们在初始化智能指针的时候也可以自己指定删除动作，
+//这个删除操作对应的函数被称之为删除器，这个删除器函数本质是一个回调函
+//数，我们只需要进行实现，其调用是由智能指针完成的。
+
+
+#include <iostream>
+#include <memory>
+using namespace std;
+
+// 自定义删除器函数，释放int型内存
+void deleteIntPtr(int* p)
+{
+    delete p;
+    cout << "int 型内存被释放了...";
+}
+
+int main()
+{
+    shared_ptr<int> ptr(new int(250), deleteIntPtr);
+    return 0;
+}
+//删除器函数也可以是 lambda 表达式，因此代码也可以写成下面这样：
+int main()
+{
+    shared_ptr<int> ptr(new int(250), [](int* p) {delete p; });
+    return 0;
+}
+//在删除数组内存时，除了自己编写删除器，也可以使用 C++ 提供的 
+//std::default_delete<T>() 函数作为删除器，这个函数内部的删除功能
+//也是通过调用 delete 来实现的，要释放什么类型的内存就将模板类型 T 
+// 指定为什么类型即可。具体处理代码如下：
+//
+
+
+
+//函数原型
+
+int main()
+{
+    shared_ptr<int> ptr(new int[10], default_delete<int[]>());
+    return 0;
+}
+//另外，我们还可以自己封装一个 make_shared_array 方法来让 
+//shared_ptr 支持数组，代码如下 :
+#include <iostream>
+#include <memory>
+using namespace std;
+
+template <typename T>
+shared_ptr<T> make_share_array(size_t size)
+{
+    // 返回匿名对象
+    return shared_ptr<T>(new T[size], default_delete<T[]>());
+}
+
+int main()
+{
+    shared_ptr<int> ptr1 = make_share_array<int>(10);
+    cout << ptr1.use_count() << endl;
+    shared_ptr<char> ptr2 = make_share_array<char>(128);
+    cout << ptr2.use_count() << endl;
+    return 0;
+}
 

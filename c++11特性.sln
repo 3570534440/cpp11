@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c++11", "c++11\c++11.vcxproj", "{ED9EB4D1-4D4F-48F6-8DC2-61795DC34961}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c++11新", "c++11新\c++11新.vcxproj", "{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,6 +25,14 @@ Global
 		{ED9EB4D1-4D4F-48F6-8DC2-61795DC34961}.Release|x64.Build.0 = Release|x64
 		{ED9EB4D1-4D4F-48F6-8DC2-61795DC34961}.Release|x86.ActiveCfg = Release|Win32
 		{ED9EB4D1-4D4F-48F6-8DC2-61795DC34961}.Release|x86.Build.0 = Release|Win32
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Debug|x64.ActiveCfg = Debug|x64
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Debug|x64.Build.0 = Debug|x64
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Debug|x86.ActiveCfg = Debug|Win32
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Debug|x86.Build.0 = Debug|Win32
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Release|x64.ActiveCfg = Release|x64
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Release|x64.Build.0 = Release|x64
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Release|x86.ActiveCfg = Release|Win32
+		{14E5C59D-0EF9-4E84-8AC1-7CFB3CEFEBD4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
