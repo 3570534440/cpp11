@@ -157,6 +157,8 @@
     <ClCompile Include="..\7.using.cpp" />
     <ClCompile Include="..\8.返回值后置.cpp" />
     <ClCompile Include="..\9.基于范围的for.cpp" />
+    <ClCompile Include="19.独占的智能指针unique.cpp" />
+    <ClCompile Include="20.弱引用智能指针.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

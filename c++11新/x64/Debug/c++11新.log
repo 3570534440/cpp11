@@ -1,0 +1,306 @@
+﻿  1.nullptr.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\1.nullptr.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  10.列表初始化.cpp
+  11.模板的优化.cpp
+  12.委托和继承构造函数cpp.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\12.委托和继承构造函数cpp.cpp(89,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\12.委托和继承构造函数cpp.cpp(45): message : 参见“main”的前一个定义
+  13.可调用对象包装器.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(51,1): error C2011: “Test”:“struct”类型重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(28): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(64,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(37): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(66,10): error C2079: “t”使用未定义的 struct“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(68,5): error C2064: 项不会计算为接受 2 个参数的函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(92,52): error C2027: 使用了未定义类型“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(80): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(92,10): error C2440: “初始化”: 无法从“int (__cdecl *)(int,double)”转换为“void (__cdecl Test::* )(int,std::string)”
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(92,43): message : 没有使该转换得以执行的上下文
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(94,34): error C2027: 使用了未定义类型“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(80): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(94,39): error C2065: “m_num”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(96,10): error C2079: “t”使用未定义的 struct“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(98,17): error C2296: “.*”: 非法，左操作数包含“int”类型
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(100,16): error C2296: “.*”: 非法，左操作数包含“int”类型
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(289,5): error C2672: “std::bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(289,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(289,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(289,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(290,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(290,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(290,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(290,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(291,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(291,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(291,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(291,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(296,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(296,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(296,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(296,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(298,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(298,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(298,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(298,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(299,5): error C2672: “bind”: 未找到匹配的重载函数
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(299,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Ret”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(299,5): error C2783: “std::_Binder<_Ret,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1472): message : 参见“std::bind”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\13.可调用对象包装器.cpp(299,5): error C2783: “std::_Binder<std::_Unforced,_Fx,_Types...> std::bind(_Fx &&,_Types &&...)”: 未能为“_Fx”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional(1466): message : 参见“std::bind”的声明
+  14.可调用对象的绑定器.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\14.可调用对象的绑定器.cpp(105,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\14.可调用对象的绑定器.cpp(36): message : 参见“main”的前一个定义
+  15.lambda.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(47,1): error C4573: “Test::m_number”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(47,30): error C2065: “m_number”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(51,1): error C3493: 无法隐式捕获“x”，因为尚未指定默认捕获模式
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(51,1): error C3493: 无法隐式捕获“y”，因为尚未指定默认捕获模式
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(62,18): error C3493: 无法隐式捕获“a”，因为尚未指定默认捕获模式
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(65,27): error C3491: “a”: 无法在非可变 lambda 中修改通过复制捕获
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(66,19): error C3493: 无法隐式捕获“b”，因为尚未指定默认捕获模式
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(79,6): error C2371: “f”: 重定义；不同的基类型
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(73): message : 参见“f”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(85,6): error C2371: “f”: 重定义；不同的基类型
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(73): message : 参见“f”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(91,1): error C2144: 语法错误:“auto”的前面应有“;”
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(93,1): error C3108: 无法推导出类型，因为初始值设定项列表不是表达式
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(93,1): error C2440: “return”: 无法从“initializer list”转换为“auto”
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(93,12): message : 没有使该转换得以执行的上下文
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(105,7): error C2143: 语法错误: 缺少“;”(在“using namespace”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(107,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\15.lambda.cpp(59): message : 参见“main”的前一个定义
+  16.右值引用.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(40,18): error C2440: “初始化”: 无法从“int”转换为“int &&”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(40,14): message : 无法将左值绑定到右值引用
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(41,23): error C2440: “初始化”: 无法从“Test”转换为“Test &”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(41,13): message : 非常量引用只能绑定到左值
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(42,13): error C2374: “t”: 重定义；多次初始化
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(41): message : 参见“t”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(43,17): error C2373: “t”: 重定义；不同的类型修饰符
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(41): message : 参见“t”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(62,1): error C2011: “Test”:“class”类型重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(19): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(95,6): error C2084: 函数“Test getObj(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(32): message : 参见“getObj”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(96,1): error C2027: 使用了未定义类型“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(19): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(95,6): error C2027: 使用了未定义类型“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(19): message : 参见“Test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(97,10): error C2079: “t”使用未定义的 class“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(101,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(37): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(103,10): error C2079: “t”使用未定义的 class“Test”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(103,14): error C2065: “getObj”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(103,22): error C2440: “初始化”: 无法从“Test (__cdecl *)(void)”转换为“int”
+D:\xia\gitee仓库\c-2022317\c-2022317\16.右值引用.cpp(103,12): message : 没有使该转换得以执行的上下文
+  17.moveAndforward.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(9,12): error C2144: 语法错误:“int”的前面应有“;”
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(9,40): error C2988: 不可识别的模板声明/定义
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(9,40): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(10,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(10,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(19,1): error C2143: 语法错误: 缺少“;”(在“int”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(22,18): error C2065: “t”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(23,23): error C2065: “t”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(23,18): error C3861: “move”: 找不到标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(26,5): error C2988: 不可识别的模板声明/定义
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(26,5): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(27,3): error C3927: "->": 非函数声明符后不允许尾随返回类型
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(27,3): error C3484: 语法错误: 返回类型前应为“->”
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(27,4): error C3613: “->”后缺少返回类型(假定为“int”)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(27,4): error C2146: 语法错误: 缺少“;”(在标识符“push_back”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(28,3): error C3927: "->": 非函数声明符后不允许尾随返回类型
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(28,3): error C3484: 语法错误: 返回类型前应为“->”
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(28,4): error C3613: “->”后缺少返回类型(假定为“int”)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(28,4): error C2146: 语法错误: 缺少“;”(在标识符“push_back”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(29,4): error C2988: 不可识别的模板声明/定义
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(29,4): error C2059: 语法错误:“...”
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(31,5): error C2988: 不可识别的模板声明/定义
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(31,5): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(40,58): error C2988: 不可识别的模板声明/定义
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(40,58): error C2143: 语法错误: 缺少“,”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(40,20): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(41,58): error C2988: 不可识别的模板声明/定义
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(41,58): error C2143: 语法错误: 缺少“,”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(41,20): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,6): error C2039: "forward": 不是 "std" 的成员
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\predefined C++ types (compiler internal)(341): message : 参见“std”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,14): error C2065: “T”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,16): error C2909: “forward”: 函数模板的显式实例化需要返回类型
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,18): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,13): error C7538: forward 不是变量模板
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,13): error C2365: “forward”: 重定义；以前的定义是“函数”
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(40): message : 参见“forward”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(44,17): error C2065: “t”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(70,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\17.moveAndforward.cpp(19): message : 参见“main”的前一个定义
+  18.共享智能指针shared_ptr.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(50,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(19): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(98,48): error C2668: “make_shared”: 对重载函数的调用不明确
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(71,15): message : 可能是“std::shared_ptr<int> make_shared<int,int>(int &&)”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2747,5): message : 或    “std::shared_ptr<int> std::make_shared<int,int>(int &&)”
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(98,48): message : 尝试匹配参数列表“(int)”时
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(101,47): error C2668: “make_shared”: 对重载函数的调用不明确
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(71,15): message : 可能是“std::shared_ptr<Test> make_shared<Test,>(void)”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2747,5): message : 或    “std::shared_ptr<Test> std::make_shared<Test,>(void)”
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(101,47): message : 尝试匹配参数列表“()”时
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(104,50): error C2668: “make_shared”: 对重载函数的调用不明确
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(71,15): message : 可能是“std::shared_ptr<Test> make_shared<Test,int>(int &&)”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2747,5): message : 或    “std::shared_ptr<Test> std::make_shared<Test,int>(int &&)”
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(104,50): message : 尝试匹配参数列表“(int)”时
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(107,85): error C2668: “make_shared”: 对重载函数的调用不明确
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(71,15): message : 可能是“std::shared_ptr<Test> make_shared<Test,const char(&)[26]>(const char (&)[26])”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2747,5): message : 或    “std::shared_ptr<Test> std::make_shared<Test,const char(&)[26]>(const char (&)[26])”
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(107,85): message : 尝试匹配参数列表“(const char [26])”时
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(134,48): error C2668: “make_shared”: 对重载函数的调用不明确
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(71,15): message : 可能是“std::shared_ptr<int> make_shared<int,int>(int &&)”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(2747,5): message : 或    “std::shared_ptr<int> std::make_shared<int,int>(int &&)”
+D:\xia\gitee仓库\c-2022317\c-2022317\18.共享智能指针shared_ptr.cpp(134,48): message : 尝试匹配参数列表“(int)”时
+  2.原始自变量.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\2.原始自变量.cpp(7,15): warning C4129: “h”: 不可识别的字符转义序列
+D:\xia\gitee仓库\c-2022317\c-2022317\2.原始自变量.cpp(7,15): warning C4129: “w”: 不可识别的字符转义序列
+D:\xia\gitee仓库\c-2022317\c-2022317\2.原始自变量.cpp(27,9): error C2374: “str3”: 重定义；多次初始化
+D:\xia\gitee仓库\c-2022317\c-2022317\2.原始自变量.cpp(19): message : 参见“str3”的声明
+  3.constexpr.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(22,3): error C3892: “t”: 不能给常量赋值
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(37,1): error C2059: 语法错误:“常数”
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(39,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(39,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(51,15): error C2084: 函数“int func1(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(45): message : 参见“func1”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(51,15): error C3615: constexpr 函数“func1”不能生成常量表达式
+D:\xia\gitee仓库\c-2022317\c-2022317\3.constexpr.cpp(60): message : 由于控制到达 constexpr 函数的末尾，导致失败
+  4.auto.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\4.auto.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\4.auto.cpp(14,8): error C3531: “a”: 类型包含“auto”的符号必须具有初始值设定项
+D:\xia\gitee仓库\c-2022317\c-2022317\4.auto.cpp(15,7): error C3530: “auto”不能与任何其他类型说明符组合
+D:\xia\gitee仓库\c-2022317\c-2022317\4.auto.cpp(18,8): error C2040: “a”:“auto *”与“int”的间接寻址级别不同
+D:\xia\gitee仓库\c-2022317\c-2022317\4.auto.cpp(19,7): error C2371: “b”: 重定义；不同的基类型
+D:\xia\gitee仓库\c-2022317\c-2022317\4.auto.cpp(15): message : 参见“b”的声明
+  5.decltype.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\5.decltype.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\5.decltype.cpp(18,19): error C2371: “b”: 重定义；不同的基类型
+D:\xia\gitee仓库\c-2022317\c-2022317\5.decltype.cpp(17): message : 参见“b”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\5.decltype.cpp(25,10): error C3861: “f”: 找不到标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\5.decltype.cpp(25,21): error C2065: “x”: 未声明的标识符
+  6.final.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(27,10): error C3248: “Child::test”: 声明为“final”的函数无法被“GrandChild::test”重写
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(17): message : 参见“Child::test”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(35,1): error C2011: “Base”:“class”类型重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(5): message : 参见“Base”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(43,18): error C2011: “Child”:“class”类型重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(14): message : 参见“Child”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(53,18): error C2011: “GrandChild”:“class”类型重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\6.final.cpp(23): message : 参见“GrandChild”的声明
+  7.using.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\7.using.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\7.using.cpp(37,15): error C2061: 语法错误: 标识符“map”
+D:\xia\gitee仓库\c-2022317\c-2022317\7.using.cpp(40,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\7.using.cpp(40,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+  8.返回值后置.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(7,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(33,14): error C3861: “x”: 找不到标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(33,17): error C3861: “y”: 找不到标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(46,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(22): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(51,22): error C2668: “add”: 对重载函数的调用不明确
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(41,6): message : 可能是“U add<int,double>(T,U)”
+          with
+          [
+              U=double,
+              T=int
+          ]
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(6,6): message : 或    “auto add<int,double>(T,U)”
+          with
+          [
+              T=int,
+              U=double
+          ]
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(51,22): message : 尝试匹配参数列表“(int, double)”时
+D:\xia\gitee仓库\c-2022317\c-2022317\8.返回值后置.cpp(52,24): error C3536: “z”: 初始化之前无法使用
+  9.基于范围的for.cpp
+  独占的智能指针unique.cpp
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,11): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,11): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(10,11): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(10,11): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(10,1): error C2086: “int unique_ptr”: 重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8): message : 参见“unique_ptr”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(11,6): error C2039: "unique_ptr": 不是 "std" 的成员
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\predefined C++ types (compiler internal)(341): message : 参见“std”的声明
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h(2361,1): error C2144: 语法错误:“int”的前面应有“;”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h(2361,8): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h(2361,1): error C2086: “int unique_ptr”: 重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8): message : 参见“unique_ptr”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(19,11): error C2872: “unique_ptr”: 不明确的符号
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,1): message : 可能是“int unique_ptr”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3155,1): message : 或    “std::unique_ptr”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(19,11): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(19,11): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(19,1): error C2086: “int unique_ptr”: 重定义
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8): message : 参见“unique_ptr”的声明
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(20,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(20,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(27,15): error C2872: “unique_ptr”: 不明确的符号
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,1): message : 可能是“int unique_ptr”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3155,1): message : 或    “std::unique_ptr”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(27,16): error C2062: 意外的类型“int”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(29,15): error C2872: “unique_ptr”: 不明确的符号
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,1): message : 可能是“int unique_ptr”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3155,1): message : 或    “std::unique_ptr”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(29,16): error C2062: 意外的类型“int”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(30,15): error C2872: “unique_ptr”: 不明确的符号
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,1): message : 可能是“int unique_ptr”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3155,1): message : 或    “std::unique_ptr”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(30,16): error C2062: 意外的类型“int”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(34,6): error C2182: “reset”: 非法使用“void”类型
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(34,12): error C2065: “pointer”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(34,20): error C2146: 语法错误: 缺少“)”(在标识符“ptr”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(38,5): error C2084: 函数“int main(void)”已有主体
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(24): message : 参见“main”的前一个定义
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(40,15): error C2872: “unique_ptr”: 不明确的符号
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,1): message : 可能是“int unique_ptr”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3155,1): message : 或    “std::unique_ptr”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(40,16): error C2062: 意外的类型“int”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(41,15): error C2872: “unique_ptr”: 不明确的符号
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(8,1): message : 可能是“int unique_ptr”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3155,1): message : 或    “std::unique_ptr”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(41,16): error C2062: 意外的类型“int”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(43,5): error C2065: “ptr1”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(44,5): error C2065: “ptr2”: 未声明的标识符
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(48,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(48,5): error C3484: 语法错误: 返回类型前应为“->”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(48,6): error C3613: “->”后缺少返回类型(假定为“int”)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(48,11): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(48,6): error C2146: 语法错误: 缺少“;”(在标识符“reset”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(49,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(49,5): error C3484: 语法错误: 返回类型前应为“->”
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(49,6): error C3613: “->”后缺少返回类型(假定为“int”)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(49,11): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(49,6): error C2146: 语法错误: 缺少“;”(在标识符“reset”的前面)
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(52,12): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\xia\gitee仓库\c-2022317\c-2022317\c++11新\独占的智能指针unique.cpp(52,9): error C2146: 语法错误: 缺少“;”(在标识符“get”的前面)
+  正在生成代码...

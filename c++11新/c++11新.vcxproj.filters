@@ -69,5 +69,11 @@
     <ClCompile Include="..\18.共享智能指针shared_ptr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="19.独占的智能指针unique.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="20.弱引用智能指针.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
