@@ -221,7 +221,7 @@ number is: 1
 
 //  */
 
-// class B //B的对象可以像函数一样被调用,叫做防函数
+// class B //B的对象可以像函数一样被调用,叫做仿函数
 // {
 // public:
 //     void operator()()//重载（）运算符
@@ -350,7 +350,8 @@ void output(int x, int y)
 int main(void)
 {
     // 使用绑定器绑定可调用对象和参数, 并调用得到的仿函数
-    bind(output, 1, 2)();
+    auto f1= bind(output, 1, 2);
+    f1();
     bind(output, placeholders::_1, 2)(10);
     bind(output, 2, placeholders::_1)(10);
 

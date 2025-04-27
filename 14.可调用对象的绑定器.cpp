@@ -14,44 +14,48 @@
 #include <functional>
 using namespace std;
 
-void callFunc(int x, const function<void(int)>& f)
-//与callFunc(i, f1);相对应
-{
-    if (x % 2 == 0)
-    {
-        f(x);
-    }
-}
+// void callFunc(int x, const function<void(int)>& f)
+// //与callFunc(i, f1);相对应
+// {
+//     if (x % 2 == 0)
+//     {
+//         f(x);
+//     }
+// }
 
-void output(int x)
-{
-    cout << x << " ";
-}
+// void output(int x)
+// {
+//     cout << x << " ";
+// }
 
-void output_add(int x)
-{
-    cout << x + 10 << " ";
-}
+// void output_add(int x)
+// {
+//     cout << x + 10 << " ";
+// }
 
-int main(void)
-{
-    // 使用绑定器绑定可调用对象和参数
-    auto f1 = bind(output, placeholders::_1);
-    for (int i = 0; i < 10; ++i)
-    {
-        callFunc(i, f1);//placeholders::_1占位符，对应第一个参数i
-    }
-    cout << endl;
+// int main(void)
+// {
+//     // 使用绑定器绑定可调用对象和参数
+//     auto f1 = bind(output, placeholders::_1);
+//     for (int i = 0; i < 10; ++i)
+//     {
+//         callFunc(i, f1);//placeholders::_1占位符，对应第一个参数i
+//     }
+//     cout << endl;
 
-    auto f2 = bind(output_add, placeholders::_1);
-    for (int i = 0; i < 10; ++i)
-    {
-        callFunc(i, f2);
-    }
-    cout << endl;
+//     auto f2 = bind(output_add, placeholders::_1);
+//     for (int i = 0; i < 10; ++i)
+//     {
+//         callFunc(i, f2);
+//     }
+//     cout << endl;
 
-    return 0;
-}
+//     return 0;
+// }
+/*结果
+0 2 4 6 8 
+10 12 14 16 18 
+ */
 
 
 //绑定类的成员函数
@@ -61,36 +65,49 @@ int main(void)
 
 //有了占位符的概念之后，使得 std::bind 的使用变得非常灵活 :
 
-void output(int x, int y)
-{
-    cout << x << " " << y << endl;
-}
+// void output(int x, int y)
+// {
+//     cout << x << " " << y << endl;
+// }
 
-//int main(void)
-//{
+// int main(void)
+// {
 //    // 使用绑定器绑定可调用对象和参数, 并调用得到的仿函数
 //    bind(output, 1, 2)();
 //    bind(output, placeholders::_1, 2)(10);
 //    bind(output, 2, placeholders::_1)(10);
-//
-// 
+
+
 //    // error, 调用时没有第二个参数
 //    // bind(output, 2, placeholders::_2)(10);
 //    // 调用时第一个参数10被吞掉了，没有被使用
 //    bind(output, 2, placeholders::_2)(10, 20);
-//
+
 //    bind(output, placeholders::_1, placeholders::_2)(10, 20);
 //    bind(output, placeholders::_2, placeholders::_1)(10, 20);
-//
-//
+
+
 //    return 0;
-//   
-//}
-//
+  
+// }
+
+/*执行结果
+1 2
+10 2
+2 10
+2 20
+10 20
+20 10*/
+
+// //绑定类的成员函数
+// //和绑定类的成员变量
 
 
-//绑定类的成员函数
-//和绑定类的成员变量
+
+// 绑定非类成员函数/变量
+//auto f = std::bind(可调用对象地址, 绑定的参数 / 占位符);
+// 绑定类成员函/变量
+//auto f = std::bind(类函数 / 成员地址, 类实例对象地址, 绑定的参数 / 占位符);
 
 class Test
 {
@@ -119,7 +136,10 @@ int main(void)
     return 0;
 }
 
-
+/*结果
+x: 520, y: 1314
+t.m_number: 2333
+*/
 
 
 

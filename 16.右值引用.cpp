@@ -12,56 +12,61 @@
 //只是该对象的一个别名。通过右值引用的声明，该右值又“重获新生”，其生命周期与右值引用类型变
 //量的生命周期一样，只要该变量还活着，该右值临时量将会一直存活下去。
 
+// #include <iostream>
+// using namespace std;
+
+// class Test
+// {
+// public:
+//     Test()
+//     {
+//         cout << "construct: my name is jerry" << endl;
+//     }
+
+//     Test(const Test& a)
+//     {
+//         cout << "copy construct: my name is tom" << endl;
+//     }
+// };
+// //return返回的都是右值
+// Test getObj()
+// {
+//     return Test(); //创建的临时对象，不能取址，
+// }
+
+// int main()
+// {
+//     int a1 = 100;
+//     // int&& a2 = a1; //  错误：不能用右值引用绑定左值
+//     int&& a2 = 520; // 520是右值
+//     cout << "a2 = " << a2 << endl;
+
+//     // Test& t1 = getObj(); //不能用左值引用绑定右值
+//     Test&& t2 = getObj();   //右值引用绑定右值
+//     cout << "使用右值引用t2调用成功" << endl;
+
+//     const Test& t3 = getObj(); //const左值引用可以绑定右值
+//     cout << "使用const左值引用t3调用成功" << endl;
+
+//     return 0;
+// }
+/*结果
+a2 = 520
+construct: my name is jerry
+使用右值引用t2调用成功
+construct: my name is jerry
+使用const左值引用t3调用成功
+*/
+
+//--------------------------------------------------------------------
+// //优化
 #include <iostream>
 using namespace std;
 
-int&& value = 520;
 class Test
 {
 public:
-    Test()
-    {
-        cout << "construct: my name is jerry" << endl;
-    }
-    Test(const Test& a)
-    {
-        cout << "copy construct: my name is tom" << endl;
-    }
-};
-
-Test getObj()
-{
-    return Test();
-}
-
-int main()
-{
-    int a1;
-    int &&a2 = a1;        // error
-    Test& t = getObj();   // error
-    Test && t = getObj();
-    const Test& t = getObj();
-    return 0;
-}
-
-//在上面的例子中 int&& value = 520; 里面 520 是纯右值，value 是对字面量 520 这个右值的引用。
-
-//在 int &&a2 = a1; 中 a1 虽然写在了 = 右边，但是它仍然是一个左值，使用左值初始化一个右值引用类型是不合法的。
-
-//在 Test& t = getObj() 这句代码中语法是错误的，右值不能给普通的左值引用赋值。
-
-//在 Test && t = getObj(); 中 getObj() 返回的临时对象被称之为将亡值，t 是这个将亡值的右值引用。
-
-//const Test& t = getObj() 这句代码的语法是正确的，常量左值引用是一个万能引用类型，它可以接受左值、右值、常量左值和常量右值。
-
-//优化
-#include <iostream>
-using namespace std;
-
-class Test
-{
-public:
-    Test() : m_num(new int(100))
+    Test() : m_num(new int(100)) // 初始化
     {
         cout << "construct: my name is jerry" << endl;
     }
@@ -100,61 +105,68 @@ Test getObj()
 
 int main()
 {
-    Test t = getObj();
+    Test t = getObj();   //初始化而不是赋值 ，，
     cout << "t.m_num: " << *t.m_num << endl;
     return 0;
 };
 
+/*
+执行结果：
+construct: my name is jerry
+t.m_num: 100
+destruct Test class ...
+*/
+//-----------------------------------------------------------------------------
 
-int&& a1 = 5;
-auto&& bb = a1;
-auto&& bb1 = 5;
+// int&& a1 = 5;
+// auto&& bb = a1;
+// auto&& bb1 = 5;
 
-int a2 = 5;
-int &a3 = a2;
-auto&& cc = a3;
-auto&& cc1 = a2;
+// int a2 = 5;
+// int &a3 = a2;
+// auto&& cc = a3;
+// auto&& cc1 = a2;
 
-const int& s1 = 100;
-const int&& s2 = 100;
-auto&& dd = s1;
-auto&& ee = s2;
+// const int& s1 = 100;
+// const int&& s2 = 100;
+// auto&& dd = s1;
+// auto&& ee = s2;
 
-const auto&& x = 5;
-//第 2 行：a1 为右值引用，推导出的 bb 为左值引用类型
-//第 3 行：5 为右值，推导出的 bb1 为右值引用类型
-//第 7 行：a3 为左值引用，推导出的 cc 为左值引用类型
-//第 8 行：a2 为左值，推导出的 cc1 为左值引用类型
-//第 12 行：s1 为常量左值引用，推导出的 dd 为常量左值引用类型
-//第 13 行：s2 为常量右值引用，推导出的 ee 为常量左值引用类型
-//第 15 行：x 为右值引用，不需要推导，只能通过右值初始化
+// const auto&& x = 5;
+// //第 2 行：a1 为右值引用，推导出的 bb 为左值引用类型
+// //第 3 行：5 为右值，推导出的 bb1 为右值引用类型
+// //第 7 行：a3 为左值引用，推导出的 cc 为左值引用类型
+// //第 8 行：a2 为左值，推导出的 cc1 为左值引用类型
+// //第 12 行：s1 为常量左值引用，推导出的 dd 为常量左值引用类型
+// //第 13 行：s2 为常量右值引用，推导出的 ee 为常量左值引用类型
+// //第 15 行：x 为右值引用，不需要推导，只能通过右值初始化
 
 
 
-void printValue(int &i)
-{
-    cout << "l-value: " << i << endl;
-}
+// void printValue(int &i)
+// {
+//     cout << "l-value: " << i << endl;
+// }
 
-void printValue(int &&i)
-{
-    cout << "r-value: " << i << endl;
-}
+// void printValue(int &&i)
+// {
+//     cout << "r-value: " << i << endl;
+// }
 
-void forward(int &&k)//不传值时是右值引用，传值之后是左值引用，调用时，右值引用变为左值引用
-{
-    printValue(k);
-}
+// void forward(int &&k)//不传值时是右值引用，传值之后是左值引用，调用时，右值引用变为左值引用
+// {
+//     printValue(k);
+// }
 
-int main()
-{
-    int i = 520;
-    printValue(i);
-    printValue(1314);
-    forward(250);
+// int main()
+// {
+//     int i = 520;
+//     printValue(i);
+//     printValue(1314);
+//     forward(250);
 
-    return 0;
-};
+//     return 0;
+// };
 //结果如下
 //l-value: 520
 //l-value: 1314
