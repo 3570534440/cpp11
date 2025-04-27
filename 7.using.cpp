@@ -7,10 +7,10 @@ using namespace std;
 // int main()
 // {
 // // 使用typedef定义函数指针
-// typedef int(*func_ptr)(int, double);
+ typedef int(*func_ptr)(int, double);
 
 // // 使用using定义函数指针
-// using func_ptr1 = int(*)(int, double);
+using func_ptr1 = int(*)(int, double);
 
 // 	return 0;
 // }
