@@ -1,3 +1,4 @@
+//final防止类被继承，class Child final: public Base，防止child被继承
 #include<iostream>
 #include <string>
 using namespace std;

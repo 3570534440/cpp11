@@ -7,69 +7,75 @@
 //C++11新标准规定，允许将变量声明为constexpr类型以便由编译器来验证变量的值是否是一个常量表达式。
 //声明为constexpr的变量一定是一个常量，而且必须用常量表达式初始化：
 
-#include<iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 
-//const
-struct T
-{
-	int a = 100;
-};
-int main()
-{
-	constexpr T t={100};
-	t.a = 10;//错误,因为a被修饰为常量
-	//constexpr,修饰函数，成为常量表达
-	//函数return的返回值必 须是常量
-	// 
-	//声明必须在main函数的前面
-	/*
-	在整个函数的主体中，不能出现常量表达式之外的语句
-	也就是说这个函数是比较简单的
+// struct T
+// {
+// 	int a = 100;
+// };
 
-	如果修饰的是模板函数，则会根据传进的参数来分情况
+// constexpr int func2()
+// {
+//     using mytype = int;
+//     constexpr mytype a = 100;
+//     constexpr mytype b = 10;
+//     constexpr mytype c = a * b;
+//     return c - (a + b);
+// }
 
-	修饰构造函数
-	*/
-	
-}
-1// error，不是常量表达式函数
-constexpr void func1()
-{
-    int a = 100;
-    cout << "a: " << a << endl;
-}
+// int main()
+// {
+// 	constexpr T t = {100};
+// 	// t.a = 10; // 错误，不能修改
 
-// error，不是常量表达式函数
-constexpr int func1()
-{
-    int a = 100;
-    return a;
-}
-// error
-constexpr int func1()
-{
-    constexpr int a = 100;
-    constexpr int b = 10;
-    for (int i = 0; i < b; ++i)
-    {
-        cout << "i: " << i << endl;
-    }
-    return a + b;
-}
+// 	cout << "func2(): " << func2() << endl;
 
-// ok
-constexpr int func2()
-{
-    using mytype = int;
-    constexpr mytype a = 100;
-    constexpr mytype b = 10;
-    constexpr mytype c = a * b;
-    return c - (a + b);
-}
+// 	return 0;
+// }
+/*
+执行结果：
+func2(): 890
 
-/*修饰模板函数
+*/
+/*
+在constexpr函数里，只能写很简单的东西：
+不允许有for循环、if语句（C++20之前）
+不允许有cout（输出操作是运行时的，不是编译期能做的）
+*/
+
+// // error，不是常量表达式函数
+// constexpr void func1()
+// {
+//     int a = 100;
+//     cout << "a: " << a << endl;
+// }
+
+
+// // error 不能有for循环
+// constexpr int func1()
+// {
+//     constexpr int a = 100;
+//     constexpr int b = 10;
+//     for (int i = 0; i < b; ++i)
+//     {
+//         cout << "i: " << i << endl;
+//     }
+//     return a + b;
+// }
+
+// // ok
+// constexpr int func2()
+// {
+//     using mytype = int;
+//     constexpr mytype a = 100;
+//     constexpr mytype b = 10;
+//     constexpr mytype c = a * b;
+//     return c - (a + b);
+// }
+
+//修饰模板函数
 
 struct Person {
     const char* name;
@@ -99,4 +105,9 @@ int main()
     return 0;
 }
 
+/*
+执行结果：
+luffy's name: luffy, age: 19
+250
+luffy's name: luffy, age: 19
 */

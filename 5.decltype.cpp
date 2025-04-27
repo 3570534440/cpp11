@@ -23,3 +23,41 @@ int main()
 }
 // sum的类型就是函数f返回的类型
 decltype(f()) sum = x;
+
+
+//-------------------------------------------------
+//decltype//:的用法
+#include <list>
+#include <iostream>
+using namespace std;
+
+template <class T>
+class Container
+{
+public:
+    void func(T& c)
+    {
+        for (m_it = c.begin(); m_it != c.end(); ++m_it)
+        {
+            cout << *m_it << " ";
+        }
+        cout << endl;
+    }
+private:
+    decltype(T().begin()) m_it;  // 用 T 的 begin() 方法返回值的类型，来作为 m_it 的类型。
+//不知道 T 的迭代器具体叫什么名字，有些容器是 iterator，有些是 const_iterator，
+//T().begin() 表示调用这个容器的 begin() 方法，得到的是一个 迭代器类型
+};
+
+int main()
+{
+    const list<int> lst{ 1,2,3,4,5,6,7,8,9 };
+    Container<const list<int>> obj;
+    obj.func(lst);
+    return 0;
+}
+
+/*
+执行结果：
+1 2 3 4 5 6 7 8 9 
+*/

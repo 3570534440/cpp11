@@ -1,17 +1,19 @@
-#include<iostream>
+#include <iostream>
+#include <map>
 #include <string>
+
 using namespace std;
+ // using 比 typedef更好
+// int main()
+// {
+// // 使用typedef定义函数指针
+// typedef int(*func_ptr)(int, double);
 
-int main()
-{
-// 使用typedef定义函数指针
-typedef int(*func_ptr)(int, double);
+// // 使用using定义函数指针
+// using func_ptr1 = int(*)(int, double);
 
-// 使用using定义函数指针
-using func_ptr1 = int(*)(int, double);
-
-	return 0;
-}
+// 	return 0;
+// }
 
 /*
 using定义别名
@@ -33,21 +35,38 @@ using语法和typedef一样，并不会创建新的类型，他们只是
  using 来为一个模板定义别名，对于上面的需求可以写成这样：
 */
 
+// 给 map<int, T> 起个别名
 template <typename T>
 using mymap = map<int, T>;
 
 int main(void)
 {
-    // map的value指定为string类型
+    // map 的 value 为 string
     mymap<string> m;
     m.insert(make_pair(1, "luffy"));
     m.insert(make_pair(2, "ace"));
 
-    // map的value指定为int类型
+    for (const auto &pair : m)
+    {
+        cout << pair.first << ": " << pair.second << endl;
+    }
+
+    // map 的 value 为 int
     mymap<int> m1;
-    m1.insert(1, 100);
-    m1.insert(2, 200);
+    m1.insert(make_pair(1, 100)); // ❗需要使用 make_pair 或 pair<int, int>
+    m1.insert(make_pair(2, 200));
+
+    for (const auto &pair : m1)
+    {
+        cout << pair.first << ": " << pair.second << endl;
+    }
 
     return 0;
 }
 
+/*结果
+1: luffy
+2: ace
+1: 100
+2: 200
+*/

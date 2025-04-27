@@ -13,24 +13,24 @@ public:
 
     Test(int max, int min)
     {
-        this->m_max = max > 0 ? max : 100;              // ÈßÓà´úÂë
+        this->m_max = max > 0 ? max : 100;              // å†—ä½™ä»£ç 
         this->m_min = min > 0 && min < max ? min : 1;
     }
 
     Test(int max, int min, int mid)
     {
-        this->m_max = max > 0 ? max : 100;             // ÈßÓà´úÂë
-        this->m_min = min > 0 && min < max ? min : 1;  // ÈßÓà´úÂë
+        this->m_max = max > 0 ? max : 100;             // å†—ä½™ä»£ç 
+        this->m_min = min > 0 && min < max ? min : 1;  // å†—ä½™ä»£ç 
         this->m_middle = mid < max&& mid > min ? mid : 50;
     }
 
-    //ÓÅ»¯ÉÏÃæµÄ´úÂë£º
-    //Test(int max, int min) :Test(max)Î¯ÍÐº¯Êý
+    //ä¼˜åŒ–ä¸Šé¢çš„ä»£ç ï¼š
+    //Test(int max, int min) :Test(max)å§”æ‰˜å‡½æ•°
     //{
     //    this->m_min = min > 0 && min < max ? min : 1;
     //}
 
-    //Test(int max, int min, int mid) :Test(max, min)//ÔÚ³õÊ¼»¯ÁÐ±íºóÃæ¿Éµ÷ÓÃº¯Êý
+    //Test(int max, int min, int mid) :Test(max, min)//åœ¨åˆå§‹åŒ–åˆ—è¡¨åŽé¢å¯è°ƒç”¨å‡½æ•°
     //{
     //    this->m_middle = mid < max&& mid > min ? mid : 50;
     //}
@@ -51,7 +51,7 @@ int main()
 }
 
 /*
-                                   ¼Ì³Ð¹¹Ôìº¯Êý
+                                   ç»§æ‰¿æž„é€ å‡½æ•°
 */
 class Base
 {

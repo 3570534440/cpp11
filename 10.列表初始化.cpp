@@ -11,55 +11,96 @@ using namespace std;
 //int arr1[] = { 1, 2, 3 };
 //int arr2[]{ 1, 2, 3 };
 //int* p = new int{ 520 };
-//double b = double{ 52.134 };//Í³Ò»µÄ³õÊ¼»¯·½Ê½
+//double b = double{ 52.134 };//ç»Ÿä¸€çš„åˆå§‹åŒ–æ–¹å¼
 //int* array = new int[3]{ 1,2,3 };
 
+//åŸºæœ¬çš„åˆå§‹åŒ–ï¼š
+#include <iostream>
+using namespace std;
 
-/*
-¾ÛºÏÌå
-³õÊ¼»¯¾ÛºÏÀàĞÍ
-*/
-//struct T2
-//{
-//    int x;
-//    long y;
-//protected:
-//    static int z;
-//}t1{ 1, 100 };		// ok
-// ¾²Ì¬³ÉÔ±µÄ³õÊ¼»¯
-//int T2::z = 2;
-//
-//
-//
-//struct T3
-//{
-//    int x;
-//    double y = 1.34;
-//    int z[3]{ 1,2,3 };
-//};
-//
-//int main(void)
-//{
-//    T3 t{ 520, 13.14, {6,7,8} };		// error, c++11²»Ö§³Ö,´Óc++14¿ªÊ¼¾ÍÖ§³ÖÁË
-//    return 0;
-//}
-//
+int main() {
+    int a{5};           // åˆå§‹åŒ–æˆ5
+    double d{3.14};     // åˆå§‹åŒ–æˆ3.14
+    int arr[3]{1, 2, 3}; // æ•°ç»„åˆ—è¡¨åˆå§‹åŒ–
 
+    cout << "a: " << a << ", d: " << d << endl;
+    for (int i : arr) {
+        cout << i << " ";
+    }
+    cout << endl;
 
-/*
-·Ç¾ÛºÏÀà
+    return 0;
+}
+/*ç»“æœ
+a: 5, d: 3.14
+1 2 3 
 */
 
 
+#include <iostream>
+#include <string>
+using namespace std;
+
+// æ²¡æœ‰æ„é€ å‡½æ•°ï¼Œåªæœ‰publicæˆå‘˜ -> èšåˆä½“
+struct Person {
+    string name;
+    int age;
+};
+
+int main() {
+    Person p1{"Luffy", 19};  // ç”¨åˆ—è¡¨åˆå§‹åŒ–
+    cout << p1.name << " is " << p1.age << " years old." << endl;
+
+    Person p2{.name="Zoro", .age=21}; // C++20æ”¯æŒã€æŒ‡å®šæˆå‘˜åˆå§‹åŒ–ã€‘
+    cout << p2.name << " is " << p2.age << " years old." << endl;
+
+    return 0;
+}
+/*ç»“æœ
+Luffy is 19 years old.
+Zoro is 21 years old.
+*/
+
+
+//åµŒå¥—èšåˆä½“åˆå§‹åŒ–
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Address {
+    string city;
+    string street;
+};
+
+struct Student {
+    string name;
+    int age;
+    Address addr;
+};
+
+int main() {
+    Student stu{"Nami", 18, {"Cocoyashi Village", "No. 1 Road"}};
+
+    cout << stu.name << " (" << stu.age << " years old) "
+         << "lives at " << stu.addr.city << ", " << stu.addr.street << endl;
+
+    return 0;
+}
+/*ç»“æœ
+Nami (18 years old) lives at Cocoyashi Village, No. 1 Road
+
+*/
+
+
 /*
-ÔÚ C++ µÄ STL ÈİÆ÷ÖĞ£¬¿ÉÒÔ½øĞĞÈÎÒâ³¤¶ÈµÄÊı¾İµÄ³õÊ¼»¯£¬Ê¹ÓÃ³õÊ¼»¯ÁĞ±íÒ²Ö»ÄÜ½øĞĞ¹Ì¶¨²ÎÊıµÄ³õÊ¼»¯£¬Èç¹ûÏëÒª×öµ½ºÍ STL Ò»ÑùÓĞÈÎÒâ³¤¶È³õÊ¼»¯µÄÄÜÁ¦£¬¿ÉÒÔÊ¹ÓÃ std::initializer_list Õâ¸öÇáÁ¿¼¶µÄÀàÄ£°åÀ´ÊµÏÖ¡£
+åœ¨ C++ çš„ STL å®¹å™¨ä¸­ï¼Œå¯ä»¥è¿›è¡Œä»»æ„é•¿åº¦çš„æ•°æ®çš„åˆå§‹åŒ–ï¼Œä½¿ç”¨åˆå§‹åŒ–åˆ—è¡¨ä¹Ÿåªèƒ½è¿›è¡Œå›ºå®šå‚æ•°çš„åˆå§‹åŒ–ï¼Œå¦‚æœæƒ³è¦åšåˆ°å’Œ STL ä¸€æ ·æœ‰ä»»æ„é•¿åº¦åˆå§‹åŒ–çš„èƒ½åŠ›ï¼Œå¯ä»¥ä½¿ç”¨ std::initializer_list è¿™ä¸ªè½»é‡çº§çš„ç±»æ¨¡æ¿æ¥å®ç°ã€‚
 
-ÏÈÀ´½éÉÜÒ»ÏÂÕâ¸öÀàÄ£°åµÄÒ»Ğ©ÌØµã£º
+å…ˆæ¥ä»‹ç»ä¸€ä¸‹è¿™ä¸ªç±»æ¨¡æ¿çš„ä¸€äº›ç‰¹ç‚¹ï¼š
 
-ËüÊÇÒ»¸öÇáÁ¿¼¶µÄÈİÆ÷ÀàĞÍ£¬ÄÚ²¿¶¨ÒåÁËµü´úÆ÷ iterator µÈÈİÆ÷±ØĞëµÄ¸ÅÄî£¬±éÀúÊ±µÃµ½µÄµü´úÆ÷ÊÇÖ»¶ÁµÄ¡£
-¶ÔÓÚ std::initializer_list<T> ¶øÑÔ£¬Ëü¿ÉÒÔ½ÓÊÕÈÎÒâ³¤¶ÈµÄ³õÊ¼»¯ÁĞ±í£¬µ«ÊÇÒªÇóÔªËØ±ØĞëÊÇÍ¬ÖÖÀàĞÍ T
-ÔÚ std::initializer_list ÄÚ²¿ÓĞÈı¸ö³ÉÔ±½Ó¿Ú£ºsize(), begin(), end()¡£
-std::initializer_list ¶ÔÏóÖ»ÄÜ±»ÕûÌå³õÊ¼»¯»òÕß¸³Öµ¡£
-3.1 ×÷ÎªÆÕÍ¨º¯Êı²ÎÊı
+å®ƒæ˜¯ä¸€ä¸ªè½»é‡çº§çš„å®¹å™¨ç±»å‹ï¼Œå†…éƒ¨å®šä¹‰äº†è¿­ä»£å™¨ iterator ç­‰å®¹å™¨å¿…é¡»çš„æ¦‚å¿µï¼Œéå†æ—¶å¾—åˆ°çš„è¿­ä»£å™¨æ˜¯åªè¯»çš„ã€‚
+å¯¹äº std::initializer_list<T> è€Œè¨€ï¼Œå®ƒå¯ä»¥æ¥æ”¶ä»»æ„é•¿åº¦çš„åˆå§‹åŒ–åˆ—è¡¨ï¼Œä½†æ˜¯è¦æ±‚å…ƒç´ å¿…é¡»æ˜¯åŒç§ç±»å‹ T
+åœ¨ std::initializer_list å†…éƒ¨æœ‰ä¸‰ä¸ªæˆå‘˜æ¥å£ï¼šsize(), begin(), end()ã€‚
+std::initializer_list å¯¹è±¡åªèƒ½è¢«æ•´ä½“åˆå§‹åŒ–æˆ–è€…èµ‹å€¼ã€‚
+3.1 ä½œä¸ºæ™®é€šå‡½æ•°å‚æ•°
 */
 

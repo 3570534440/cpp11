@@ -1,30 +1,54 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	string str = "D:\hello\world\test.txt";//´ËÊ±\t»á±»µ±³ÉÖÆ±í·û
+	string str = "D:\\hello\\world\\test.txt"; // åæ–œæ è½¬ä¹‰
 	cout << str << endl;
-	string str1 = "D:hello\\world\\test.txt";//ÕâÊ±\t²»»áµ±³ÉÖÆ±í·û
+
+	string str1 = "D:hello\\world\\test.txt"; // åæ–œæ è½¬ä¹‰
 	cout << str1 << endl;
-	string str2 = "<qwe>\
-		<awdf>\
-		<appok>\
-		<ÄãºÃ>\
-		<ddddd>";
+
+	string str2 = R"(<qwe>
+	<awdf>
+	<appok>
+	<ä½ å¥½>
+	<ddddd>)"; // ç”¨åŸå§‹å­—ç¬¦ä¸²
 	cout << str2 << endl;
 
-	//
-	string str3 = R"(D:\hello\world\test.txt)";//´ËÊ±\t²»»á±ä³É×ªÒå×Ö·û
+	string str3 = R"(D:\hello\world\test.txt)"; // åŸå§‹å­—ç¬¦ä¸²ï¼Œä¸éœ€è¦è½¬ä¹‰
 	cout << str3 << endl;
+
 	string str4 = R"(<qwe>
-		<awdf>
-		<appok>
-		<ÄãºÃ>
-		<ddddd>)";//¿ÉÒÔÔ­ÑùµÄÔÚÖÕ¶ËÊä³ö
+	<awdf>
+	<appok>
+	<ä½ å¥½>
+	<ddddd>)"; // åŸæ ·è¾“å‡º
 	cout << str4 << endl;
-	string str3 = R"hello(D:\hello\world\test.txt)hello";
-	//RÁ½¶ËµÄ×Ö·û±ØĞëÊÇÒ»ÑùµÄ
+
+	string str5 = R"hello(D:\hello\world\test.txt)hello"; // è‡ªå®šä¹‰åŸå§‹å­—ç¬¦ä¸²
+	cout << str5 << endl;
+
 	return 0;
 }
+/*
+æ‰§è¡Œç»“æœ:
+
+D:\hello\world\test.txt
+D:hello\world\test.txt
+<qwe>
+        <awdf>
+        <appok>
+        <ä½ å¥½>
+        <ddddd>
+D:\hello\world\test.txt
+<qwe>
+        <awdf>
+        <appok>
+        <ä½ å¥½>
+        <ddddd>
+D:\hello\world\test.txt
+
+
+*/

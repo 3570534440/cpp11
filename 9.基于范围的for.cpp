@@ -1,34 +1,114 @@
 /*
-for (declaration : expressin)
+for (declaration : expressin)ï¼ˆå£°æ˜ï¼Œè¡¨è¾¾å¼ï¼‰
 {
 
 }
 
 */
-#include <iostream>
-#include <vector>
-using namespace std;
+// #include <iostream>
+// #include <vector>
+// using namespace std;
 
-int main(void)
-{
-    vector<int> t{ 1,2,3,4,5,6 };
-    for (const auto &value : t)
-    {
-        cout << value << " ";
-    }
-    cout << endl;
+// int main(void)
+// {
+//     vector<int> t{ 1,2,3,4,5,6 };
+//     for (const auto &value : t)
+//     {
+//         cout << value << " ";
+//     }
+//     cout << endl;
 
-    return 0;
-}
-//Ê¹ÓÃÆÕÍ¨µÄ for Ñ­»··½Ê½£¨»ùÓÚµü´úÆ÷£©±éÀú¹ØÁªĞÔÈİÆ÷£¬ auto ×Ô¶¯ÍÆµ¼³öµÄÊÇÒ»¸öµü´úÆ÷ÀàĞÍ£¬ĞèÒªÊ¹ÓÃµü´úÆ÷µÄ·½Ê½È¡³öÔªËØÖĞµÄ¼üÖµ¶Ô£¨ºÍÖ¸ÕëµÄ²Ù×÷·½·¨ÏàÍ¬£©£º
+//     string s = "hello";
+
+//     for (char c : s) {
+//         cout << c << endl;
+//     }
+
+//     return 0;
+// }
+
+/*ç»“æœ
+1 2 3 4 5 6
+*/
+
+//ä½¿ç”¨æ™®é€šçš„ for å¾ªç¯æ–¹å¼ï¼ˆåŸºäºè¿­ä»£å™¨ï¼‰éå†å…³è”æ€§å®¹å™¨ï¼Œ auto è‡ªåŠ¨æ¨å¯¼å‡ºçš„æ˜¯ä¸€ä¸ªè¿­ä»£å™¨ç±»å‹ï¼Œéœ€è¦ä½¿ç”¨è¿­ä»£å™¨çš„æ–¹å¼å–å‡ºå…ƒç´ ä¸­çš„é”®å€¼å¯¹ï¼ˆå’ŒæŒ‡é’ˆçš„æ“ä½œæ–¹æ³•ç›¸åŒï¼‰ï¼š
 //it->first
 //it->second
-//Ê¹ÓÃ»ùÓÚ·ÃÎÊµÄ for Ñ­»·±éÀú¹ØÁªĞÔÈİÆ÷£¬auto ×Ô¶¯ÍÆµ¼³öµÄÀàĞÍÊÇÈİÆ÷ÖĞµÄ value_type£¬Ïàµ±ÓÚÒ»¸ö¶Ô×é£¨std::pair£©¶ÔÏó£¬ÌáÈ¡¼üÖµ¶ÔµÄ·½Ê½ÈçÏÂ£º
+//ä½¿ç”¨åŸºäºè®¿é—®çš„ for å¾ªç¯éå†å…³è”æ€§å®¹å™¨ï¼Œauto è‡ªåŠ¨æ¨å¯¼å‡ºçš„ç±»å‹æ˜¯å®¹å™¨ä¸­çš„ value_typeï¼Œç›¸å½“äºä¸€ä¸ªå¯¹ç»„ï¼ˆstd::pairï¼‰å¯¹è±¡ï¼Œæå–é”®å€¼å¯¹çš„æ–¹å¼å¦‚ä¸‹ï¼š
 //it.first
 //it.second
 
 
 /*
-setÈİÆ÷¶Á³öÀ´ÊÇÖ»¶ÁµÄconstÀàĞÍ
+setå®¹å™¨è¯»å‡ºæ¥æ˜¯åªè¯»çš„constç±»å‹
 
+*/
+
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+// å®šä¹‰ä¸€ä¸ªç»“æ„ä½“
+struct Student {
+    string name;
+    int score;
+};
+
+int main() {
+    // å®šä¹‰ä¸€ä¸ªå­¦ç”Ÿæ•°ç»„
+    vector<Student> students = {
+        {"Luffy", 85},
+        {"Zoro", 92},
+        {"Nami", 78},
+        {"Sanji", 88}
+    };
+
+    // éå†æ‰€æœ‰å­¦ç”Ÿï¼Œç»™åˆ†æ•°ä½äº80åˆ†çš„äººåŠ 5åˆ†è¡¥è€ƒæœºä¼š
+    for (Student& stu : students) { // å¼•ç”¨ï¼Œèƒ½ä¿®æ”¹åŸæ•°æ®
+        if (stu.score < 80) {
+            cout << stu.name << " è¡¥è€ƒï¼ŒåŠ åˆ†ï¼åŸåˆ†æ•°: " << stu.score;
+            stu.score += 5;
+            cout << "ï¼Œæ–°åˆ†æ•°: " << stu.score << endl;
+        }
+    }
+
+    cout << "\næœ€ç»ˆæˆç»©å•ï¼š" << endl;
+    for (const Student& stu : students) { // åªè¯»å¼•ç”¨ï¼Œæé«˜æ€§èƒ½
+        cout << stu.name << ": " << stu.score << " åˆ†" << endl;
+    }
+
+    cout << "\n-------\n";
+
+    // åµŒå¥—èŒƒå›´forï¼šäºŒç»´vector
+    vector<vector<int>> matrix = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    for (const auto& row : matrix) {
+        for (int num : row) {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+/*
+
+Nami è¡¥è€ƒï¼ŒåŠ åˆ†ï¼åŸåˆ†æ•°: 78ï¼Œæ–°åˆ†æ•°: 83
+
+æœ€ç»ˆæˆç»©å•ï¼š
+Luffy: 85 åˆ†
+Zoro: 92 åˆ†
+Nami: 83 åˆ†
+Sanji: 88 åˆ†
+
+-------
+1 2 3 
+4 5 6 
+7 8 9 
 */
